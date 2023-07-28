@@ -1,4 +1,8 @@
-<img src="./lion.png" width="500px"></img>
+# Riemannian Lion Optimizer in PyTorch
+
+In this repo, I have extended the Lion loss as created by researchers at Google Brain to work on Riemannian manifolds. This code is built through the [Geoopt](https://github.com/geoopt/geoopt) package as it provides a convenient extension of Pytorch into the non-euclidean domain. The RLion optimizer recomputes the gradient as determined by the geometry of the manifold and then performs [parallel transport](https://en.wikipedia.org/wiki/Parallel_transport) along the manifold during gradient descent. 
+
+Below you can find the original explanation of the Lion loss function:
 
 ## 🦁 Lion - Pytorch
 
